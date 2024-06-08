@@ -1,0 +1,94 @@
+.grid-container>img{
+  max-width: 100%;
+  height: auto;
+}
+.item1 { grid-area: img1; }
+.item2 { grid-area: img4; }
+.item3 { grid-area: img2; }
+.item4 { grid-area: img3; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'img1  img4 img4 img4 img4'
+    'img1  img2 img2 img3 img3'
+   ;
+  gap: 5px;
+  background-color: transparent;
+  padding: 6px;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  font-size: 30px;
+}
+.Reasons
+{  
+  padding: 0 2rem;
+  display: flex;
+  gap:1rem ;
+}
+.righ-r{
+  flex: 1 1;
+  text-transform: uppercase;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column ;
+}
+.right-r>span{
+  font-weight:bold;
+  color: var(--orange);
+}
+.reason-heading
+{
+  display: flex;
+  gap: 3rem;
+  margin: 10px;
+}
+.right-r>div{
+  
+  color: white;
+  font-size: 3rem;
+font-weight: bold ;
+
+}
+.details-r
+{display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.details-r>div{
+  display: flex;
+  font-size: 1rem;
+  gap: 1rem;
+}
+.details-r>div>img{
+  width: 2rem;
+  height: 2rem;
+}
+#brand
+{
+  color: var(--gray);
+
+}
+.partners
+{
+  display: flex;
+  gap: 1rem;
+  margin: 10px;
+}
+.partners>img{
+  width: 2.5rem;
+}
+@media screen and (max-width:768px) {
+  .Reasons
+  {
+    flex-direction: column;
+  }
+  .grid-container>.item1{
+    height: 200px;
+    width: 319px;
+  }
+
+}
